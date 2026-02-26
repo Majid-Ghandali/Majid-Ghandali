@@ -1,5 +1,5 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Field](https://img.shields.io/badge/Field-Computational%20Number%20Theory-green)
+![Field](https://img.shields.io/badge/Field-Computational%20Number%20Theory-darkgreen)
 
 # Hi, I'm Majid 👋
 **PhD Researcher in Mathematics**
