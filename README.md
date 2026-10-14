@@ -14,11 +14,11 @@ ORCID: [0009-0001-1097-1770](https://orcid.org/0009-0001-1097-1770)
 
 My work develops a unified structural framework for quadratic character sums attached to Fibonacci and Lucas sequences. The central objects are:
 
-- The companion matrix \( A \in \mathrm{GL}_2(\mathbb{F}_p) \)
-- The rank of apparition \( z(p) \) and the rank index \( i_p \)
-- Half-period involutions \( A^{T/2} \equiv -I \)
-- Rank-block scalar propagation via the multiplier \( \Lambda \)
-- Exact cancellation of full-period character sums \( S_p \)
+- The companion matrix $A \in \mathrm{GL}_2(\mathbb{F}_p)$
+- The rank of apparition $z(p)$ and the rank index $i_p$
+- Half-period involutions $A^{T/2} \equiv -I$
+- Rank-block scalar propagation via the multiplier $\Lambda$
+- Exact cancellation of full-period character sums $S_p$
 
 The program systematically connects these mechanisms to Frobenius traces of CM elliptic curves and to classical Jacobsthal sums.
 
@@ -31,9 +31,11 @@ The program systematically connects these mechanisms to Frobenius traces of CM e
 **Manuscript:** *Quadratic Residuosity in Fibonacci Sequences: Arithmetic Structure via CM Elliptic Curves and Twisted Character Sums*  
 **Software DOI:** [10.5281/zenodo.18764803](https://doi.org/10.5281/zenodo.18764803)
 
-Main identity: for primes inert in \( \mathbb{Q}(\sqrt{5}) \),
-\[ S_p = \sum_{n=1}^{p+1} \chi_p(F_n) = -a_p(E), \]
-where \( E: y^2 = x^3 - 4x \).
+Main identity: for primes inert in $\mathbb{Q}(\sqrt{5})$,
+
+$$S_p = \sum_{n=1}^{p+1} \chi_p(F_n) = -a_p(E),$$
+
+where $E: y^2 = x^3 - 4x$.
 
 ---
 
@@ -43,8 +45,8 @@ where \( E: y^2 = x^3 - 4x \).
 **Software DOI:** [10.5281/zenodo.22118430](https://doi.org/10.5281/zenodo.22118430)
 
 Two exact cancellation mechanisms:
-1. Half-period translation induced by the central involution \( A^{T/2} \equiv -I \)
-2. Scalar propagation across rank blocks via the rank multiplier \( \Lambda \)
+1. Half-period translation induced by the central involution $A^{T/2} \equiv -I$
+2. Scalar propagation across rank blocks via the rank multiplier $\Lambda$
 
 ---
 
@@ -54,8 +56,10 @@ Two exact cancellation mechanisms:
 **Software DOI:** [10.5281/zenodo.23263041](https://doi.org/10.5281/zenodo.23263041)
 
 Explicit evaluation of
-\[ S(p) = \sum_{j=1}^{z(p)} \chi_p(F_j) \]
-in the rank-index-two case \( i_p = 2 \), reduced to classical Jacobsthal sums in both split and inert regimes.
+
+$$S(p) = \sum_{j=1}^{z(p)} \chi_p(F_j)$$
+
+in the rank-index-two case $i_p = 2$, reduced to classical Jacobsthal sums in both split and inert regimes.
 
 ---
 
