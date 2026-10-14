@@ -1,74 +1,111 @@
-# Hi, I'm Majid Ghandali 👋
+# Hi, I'm Majid Ghandali
 
 **Independent Researcher in Computational Number Theory**  
-Tehran, Iran · ORCID: [0009-0001-1097-1770](https://orcid.org/0009-0001-1097-1770)
+Tehran, Iran  
+ORCID: [0009-0001-1097-1770](https://orcid.org/0009-0001-1097-1770)
 
-> Exploring structural symmetries of recursive sequences over finite fields —  
-> exact cancellation mechanisms, half-period involutions, and arithmetic dynamics of Fibonacci & Lucas sequences.
-
----
-
-### 🔬 Research Focus
-
-- **Fibonacci & Lucas Character Sums**  
-  Exact evaluation and cancellation of \( S_p = \sum \chi_p(F_n) \) and related Jacobsthal-type sums.
-
-- **Half-Period Involutions & Anti-Periodicity**  
-  Central involutions \( A^{\pi(p)/2} \equiv -I \) in the companion matrix, leading to exact pairwise cancellation when \( \chi_p(-1) = -1 \).
-
-- **CM Elliptic Curves & Trace Identities**  
-  Structural identity \( S_p = -a_p(E) \) for the curve \( E: y^2 = x^3 - 4x \) and primes inert in \( \mathbb{Q}(\sqrt{5}) \).
-
-- **Rank of Apparition & Rank-Block Decomposition**  
-  Scalar propagation across rank blocks and index-dependent reflection phenomena.
-
-- **High-Performance Computational Verification**  
-  Large-scale exact-arithmetic pipelines (Numba/Python) with full reproducibility and Zenodo archiving.
+> Exact structural mechanisms in recursive sequences over finite fields:  
+> half-period involutions, rank-block scalar propagation, character-sum cancellation,  
+> and arithmetic identities linking Fibonacci/Lucas sums to CM elliptic curves.
 
 ---
 
-### 📂 Featured Research Repositories
+### Research Program
 
-| Repository | Description | Status |
-|------------|-------------|--------|
-| [**fibonacci-cm-elliptic**](https://github.com/Majid-Ghandali/fibonacci-cm-elliptic) | Numerical verification of \( S_p = -a_p(E) \) linking Fibonacci character sums and CM elliptic curves | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18764803.svg)](https://doi.org/10.5281/zenodo.18764803) |
-| [**half-period-involutions-in-inert-lucas-sequences**](https://github.com/Majid-Ghandali/half-period-involutions-in-inert-lucas-sequences) | Half-period involutions and exact character-sum cancellation in inert Lucas sequences | [![Manuscript DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22149586.svg)](https://doi.org/10.5281/zenodo.22149586) |
-| [**fibonacci-character-sums-index-two**](https://github.com/Majid-Ghandali/fibonacci-character-sums-index-two) | Fibonacci character sums at rank index two and associated Jacobsthal sums | Active |
-| [**fibonacci-character-sum-full-rank**](https://github.com/Majid-Ghandali/fibonacci-character-sum-full-rank) | Explicit closed-form evaluation for primes with full rank of apparition | Active |
-| [**fibonacci-even-rank-reflection-selection**](https://github.com/Majid-Ghandali/fibonacci-even-rank-reflection-selection) | Character-twisted reflection in even-rank Fibonacci blocks | Active |
-| [**fibchar-rank-blocks**](https://github.com/Majid-Ghandali/fibchar-rank-blocks) | Rank-block decomposition and scalar collapse phenomena | Template |
+My work develops a unified structural framework for quadratic character sums attached to Fibonacci and Lucas sequences. The central objects are:
 
----
+- The companion matrix \( A \in \mathrm{GL}_2(\mathbb{F}_p) \)
+- The rank of apparition \( z(p) \) and the rank index \( i_p \)
+- Half-period involutions \( A^{T/2} \equiv -I \)
+- Rank-block scalar propagation via the multiplier \( \Lambda \)
+- Exact cancellation of full-period character sums \( S_p \)
 
-### 🧠 Current Research Program
-
-I am systematically developing a unified framework that connects:
-
-1. Matrix dynamics of the Fibonacci/Lucas companion matrix over \(\mathbb{F}_p\)
-2. Exact half-period involutions and anti-periodicity
-3. Quadratic character cancellation mechanisms
-4. Frobenius traces of CM elliptic curves
-
-All results are accompanied by pure-Python (or Numba-accelerated) verification codes, full test suites, and Zenodo-archived releases for long-term reproducibility.
+The program systematically connects these mechanisms to Frobenius traces of CM elliptic curves and to classical Jacobsthal sums.
 
 ---
 
-### ⚙️ Technical Stack
+### Core Research Series
 
-`Python` · `Numba` · `SymPy` · `SageMath` · `NumPy` · `Pandas` · `Matplotlib` · `LaTeX` · `GitHub Actions` · `Zenodo`
+#### 1. CM Elliptic Curves and Trace Identities
+**Repository:** [fibonacci-cm-elliptic](https://github.com/Majid-Ghandali/fibonacci-cm-elliptic)  
+**Manuscript:** *Quadratic Residuosity in Fibonacci Sequences: Arithmetic Structure via CM Elliptic Curves and Twisted Character Sums*  
+**Software DOI:** [10.5281/zenodo.18764803](https://doi.org/10.5281/zenodo.18764803)
+
+Main identity: for primes inert in \( \mathbb{Q}(\sqrt{5}) \),
+\[ S_p = \sum_{n=1}^{p+1} \chi_p(F_n) = -a_p(E), \]
+where \( E: y^2 = x^3 - 4x \).
 
 ---
 
-### 📫 Contact & Profiles
+#### 2. Half-Period Involutions in Inert Lucas Sequences
+**Repository:** [half-period-involutions-in-inert-lucas-sequences](https://github.com/Majid-Ghandali/half-period-involutions-in-inert-lucas-sequences)  
+**Manuscript DOI:** [10.5281/zenodo.22149586](https://doi.org/10.5281/zenodo.22149586)  
+**Software DOI:** [10.5281/zenodo.22118430](https://doi.org/10.5281/zenodo.22118430)
 
-- 📧 **Email:** [majid.ghandali@gmail.com](mailto:majid.ghandali@gmail.com)
-- 🆔 **ORCID:** [0009-0001-1097-1770](https://orcid.org/0009-0001-1097-1770)
-- 📄 **Zenodo:** [Search “Majid Ghandali”](https://zenodo.org/search?q=Majid%20Ghandali)
+Two exact cancellation mechanisms:
+1. Half-period translation induced by the central involution \( A^{T/2} \equiv -I \)
+2. Scalar propagation across rank blocks via the rank multiplier \( \Lambda \)
+
+---
+
+#### 3. Rank Index Two and Jacobsthal Sums
+**Repository:** [fibonacci-character-sums-index-two](https://github.com/Majid-Ghandali/fibonacci-character-sums-index-two)  
+**Manuscript DOI (v1.0.2):** [10.5281/zenodo.23339521](https://doi.org/10.5281/zenodo.23339521)  
+**Software DOI:** [10.5281/zenodo.23263041](https://doi.org/10.5281/zenodo.23263041)
+
+Explicit evaluation of
+\[ S(p) = \sum_{j=1}^{z(p)} \chi_p(F_j) \]
+in the rank-index-two case \( i_p = 2 \), reduced to classical Jacobsthal sums in both split and inert regimes.
+
+---
+
+#### 4. Full Rank of Apparition
+**Repository:** [fibonacci-character-sum-full-rank](https://github.com/Majid-Ghandali/fibonacci-character-sum-full-rank)
+
+Closed-form sign evaluation of the Fibonacci character sum for primes with full rank of apparition, via primitive-root parametrization.
+
+---
+
+#### 5. Even-Rank Reflection and Rank-Block Phenomena
+**Repositories:**  
+- [fibonacci-even-rank-reflection-selection](https://github.com/Majid-Ghandali/fibonacci-even-rank-reflection-selection)  
+- [fibchar-rank-blocks](https://github.com/Majid-Ghandali/fibchar-rank-blocks)
+
+Character-twisted reflection in even-rank Fibonacci blocks, index-dependent weighted reflection, surviving midpoint fixed points, and scalar collapse under rank-block decomposition.
+
+---
+
+### Ongoing & Next Directions
+
+- **Density formulae** for specific rank-index classes (especially inert index-two primes), building on GRH-conditional frameworks (Roskam–Chen) and exact structural constraints already established.
+- Extension of half-period and rank-block mechanisms to broader families of Lucas sequences.
+- Systematic comparison of cancellation thresholds across different arithmetic regimes (doubly-inert, singly-inert, split).
+
+---
+
+### Technical Approach
+
+All mathematical claims are proved in the manuscripts.  
+Repositories supply:
+- Pure-Python / Numba verification pipelines
+- Exact-arithmetic diagnostics
+- Full evidence archives with SHA-256 checksums
+- Zenodo-archived releases for long-term reproducibility
+
+**Stack:** Python · Numba · SymPy · NumPy · LaTeX · GitHub Actions · Zenodo
+
+---
+
+### Contact
+
+- Email: [majid.ghandali@gmail.com](mailto:majid.ghandali@gmail.com)
+- ORCID: [0009-0001-1097-1770](https://orcid.org/0009-0001-1097-1770)
+- Zenodo: [Search “Majid Ghandali”](https://zenodo.org/search?q=Majid%20Ghandali)
 
 ---
 
 <div align="center">
 
-*Pure mathematics at computational scale — exact structures first, numerics second.*
+*Exact structures first. Numerics second. Reproducibility always.*
 
 </div>
